@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginLeft="54dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageView"
+        app:layout_constraintLeft_toLeftOf="@+id/circularImageView"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="15"
+        android:text="123456789012345"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/username"
+        app:layout_constraintLeft_toLeftOf="@+id/username"
+        app:layout_constraintRight_toRightOf="@+id/username"
+        app:layout_constraintTop_toTopOf="@+id/username" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circularImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/person"
+        app:civ_border_color="#5A03B0"
+        app:civ_border_width="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/settings"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/AppNameLogo"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/circularImageView" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AppNameLogo">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/basla_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_basla"
+            android:onClick="mainBtn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nasil_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_nasil"
+            android:onClick="mainBtn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cikis_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_cikis"
+            android:onClick="mainBtn" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
