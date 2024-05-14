@@ -33,13 +33,14 @@ public class MainActivity extends AppCompatActivity {
             finish();
             startActivity(playIntent);
             overrideActivityTransition(R.anim.slide_out_up, R.anim.slide_in_down);
-        }else if (itemId == R.id.nasil_btn){
+        } else if (itemId == R.id.nasil_btn) {
 
-        }else if (itemId == R.id.cikis_btn) {
+        } else if (itemId == R.id.cikis_btn) {
             cikisBildirim();
 
         }
     }
+
     @Override
     public void onBackPressed() {
         cikisBildirim();
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         alertDialog.setMessage("Uygulamadan Çıkmak İstediğinize Emin Misiniz?");
         alertDialog.setIcon(R.mipmap.ic_launcher);
         alertDialog.setPositiveButton("Evet",
-                new DialogInterface.OnClickListener(){
+                new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         finishAffinity();
                     }
@@ -64,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 });
         alertDialog.show();
     }
+
     private void overrideActivityTransition(int slideOutUp, int slideInDown) {
     }
 }
