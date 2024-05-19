@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:maxLength="15"
-        android:text="123456789012345"
+        android:text="kullaniciAdi"
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -49,7 +49,7 @@
         android:layout_marginRight="5dp"
         android:src="@drawable/settings"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <ImageView
         android:id="@+id/AppNameLogo"

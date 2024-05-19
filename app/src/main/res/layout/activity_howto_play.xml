@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".HowtoPlayActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/how_to_play_card"
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+
+        app:cardBackgroundColor="#8620A1"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="35dp"
+        app:contentPadding="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/howtoplay">
+
+            <TextView
+                android:id="@+id/bilgi_baslik_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="NASIL OYNANIR ?"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/bilgi_text1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bilgi_text1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="Oyunun Amacı: Kelime tahmin oyunu, size rastgele bir kelime verir ve bu kelimeyi doğru bir şekilde tahmin etmenizi ister."
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bilgi_baslik_text" />
+
+            <TextView
+                android:id="@+id/bilgi_text2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="Sorular ve Kelimeler: Oyuna başladığınızda size bir soru verilir. Bu soru size tahmin edeceğiniz kelimenin ipucunu sağlar. Soru, genellikle kelimenin anlamını veya ilişkili bir kavramı içerir."
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bilgi_text1" />
+
+            <TextView
+                android:id="@+id/bilgi_text3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="Kelimeyi Bulma: Soruyu okuduktan sonra, altında bir boşlukla sunulan kelimenin harf sayısını bilirsiniz. Tahmin etmek için aşağıdaki adımları izleyin:\n\nHarf Al: Eğer isterseniz, herhangi bir zamanda Harf Al butonuna basarak bir harf alabilirsiniz. Bu, size kelimenin rastgele bir harfini gösterir.
+\n\nTahmin Et: Eğer kelimeyi biliyorsanız veya bir kısmını tahmin edebiliyorsanız, tahmininizi Tahmin Et butonuna girerek yapın."
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bilgi_text2" />
+
+            <TextView
+                android:id="@+id/bilgi_text4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="Yanlış Tahmin: Eğer tahmininiz yanlışsa, başka harfler almaya veya yeni bir tahmin yapmaya devam edebilirsiniz."
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bilgi_text3" />
+
+            <TextView
+                android:id="@+id/bilgi_text5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="\n\n*Ancak yanlış tahminlerinizin sınırlı olduğunu unutmayın.*\n\nİYİ EĞLENCELER :)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bilgi_text4" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

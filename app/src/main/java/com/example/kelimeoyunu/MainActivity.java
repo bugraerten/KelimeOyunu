@@ -34,7 +34,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(playIntent);
             overrideActivityTransition(R.anim.slide_out_up, R.anim.slide_in_down);
         } else if (itemId == R.id.nasil_btn) {
-
+            Intent howtoPlayIntent = new Intent(this, HowtoPlayActivity.class);
+            finish();
+            startActivity(howtoPlayIntent);
+            overrideActivityTransition(R.anim.slide_out_up, R.anim.slide_in_down);
         } else if (itemId == R.id.cikis_btn) {
             cikisBildirim();
 

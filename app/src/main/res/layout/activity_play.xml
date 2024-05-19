@@ -74,13 +74,15 @@
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:background="@drawable/btn_harf_al" />
+            android:background="@drawable/btn_harf_al"
+            android:onClick="btnHarfAl" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_marginLeft="25dp"
-            android:background="@drawable/btn_tahmin_et" />
+            android:background="@drawable/btn_tahmin_et"
+            android:onClick="btnTahminEt" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
